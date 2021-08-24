@@ -5,7 +5,16 @@
 
 #### Creators - [Polina Moore](https://github.com/Poligera/), [Monika Segarra](https://github.com/msvalen/) and [Deborah Francis](https://github.com/Deb0890).
 
-## Run app:
+
+### Functionality:
+- Home page displays "Hello from Sweet Bliss App! :)" message
+- Users can see a full list of stored recipes
+- Users can find a particular recipe by ID
+- Users can add a recipe using Hopscotch, Postman, Thunderclient or any other API testing tool
+- Added data does not persist as it is stored in a Python file for now
+
+
+### Run app:
 
 _NB: These instructions assume you have Pipenv installed within your current version of Python.
 - clone the repo and cd into the folder
@@ -20,14 +29,6 @@ _NB: These instructions assume you have Pipenv installed within your current ver
 ### Available routes: \
 `GET`, `POST`: `/recipes` \
 `GET`: `/recipes/:id`\
-
-
-### Functionality:
-- Home page displays "Hello from Sweet Bliss App! :)" message
-- Users can see a full list of stored recipes
-- Users can find a particular recipe by ID
-- Users can add a recipe using Hopscotch, Postman, Thunderclient or any other API testing tool
-- Added data does not persist as it is stored in a Python file for now
 
 
 ### Future features
