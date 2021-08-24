@@ -42,3 +42,24 @@ recipes = [
     "method": "Combine all ingredients in an oversized microwave-safe mug. Mix vigorously with a small whisk until batter is smooth and the egg has been completely mixed in. Cook in the microwave for about 1 minute 10 seconds. The cake should be set but may be slightly wet on top. Let cake cool for 15 minutes before serving. The cake will condense down during this cooling process. You can replate in a smaller mug/plate/ramekin before serving. You can top with powdered sugar or chocolate syrup."},
 
 ]
+
+def index(req):
+    return [r for r in recipes], 200
+
+
+def show(req, uid):
+    return find_by_uid(uid), 200
+
+
+def create(req):
+    new_recipe = req.get_json()
+    new_recipe['id'] = sorted([r['id'] for r in recipes])[-1] + 1
+    recipes.append(new_recipe)
+    return new_recipe, 201
+
+
+def find_by_uid(uid):
+    try:
+        return next(r for r in recipes if r['id'] == uid)
+    except:
+        raise BadRequest(f"We don't have a recipe with id {uid}!")
