@@ -8,7 +8,7 @@ CORS(app)
 
 @app.route('/')
 def home():
-    return jsonify({'message': 'Hello from Flask!'}), 200
+    return jsonify({'message': 'Hello from Sweet Bliss App! :)'}), 200
 
 @app.route('/recipes', methods=['GET', 'POST'])
 def recipes_handler():

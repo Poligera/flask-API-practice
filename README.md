@@ -3,7 +3,7 @@
 
 #### Sweet Bliss App is a backend REST API created with Python and Flask framework.
 
-#### Creators - Polina Moore, Monika Segarra and Debrah Francis.
+#### Creators - [Polina Moore](https://github.com/Poligera/), [Monika Segarra](https://github.com/msvalen/) and [Deborah Francis](https://github.com/Deb0890).
 
 ## Run app:
 
