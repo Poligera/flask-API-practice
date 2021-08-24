@@ -62,4 +62,4 @@ def find_by_uid(uid):
     try:
         return next(r for r in recipes if r['id'] == uid)
     except:
-        raise BadRequest(f"We don't have that cat with id {uid}!")
+        raise BadRequest(f"We don't have a recipe with id {uid}!")
