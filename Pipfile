@@ -10,11 +10,17 @@ dev= "sh -c \"export FLASK_ENV='development' && flask run\""
 flask = "*"
 flask-cors = "*"
 waitress = "*"
+pytest = "*"
 
 [dev-packages]
 pytest = "*"
 pytest-cov = "*"
 
-
 [requires]
 python_version = "3.10"
+
+[scripts]
+dev = "bash -c \"set FLASK_ENV='development' && flask run\""
+start = "waitress-serve --listen=*:5000 app:app"
+test = "pytest ."
+coverage = "pytest --cov-report term-missing --cov=."
