@@ -6,7 +6,6 @@ name = "pypi"
 [packages]
 flask = "*"
 flask-cors = "*"
-waitress = "*"
 pytest = "*"
 gunicorn = "*"
 
@@ -19,6 +18,6 @@ python_version = "3.10"
 
 [scripts]
 dev = "bash -c \"set FLASK_ENV='development' && flask run\""
-start = "waitress-serve --listen=*:5000 app:app"
+start = "gunicorn app:app"
 test = "pytest ."
 coverage = "pytest --cov-report term-missing --cov=."
