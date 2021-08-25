@@ -3,9 +3,6 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
-[scripts]
-dev= "sh -c \"export FLASK_ENV='development' && flask run\""
-
 [packages]
 flask = "*"
 flask-cors = "*"
@@ -16,6 +13,8 @@ gunicorn = "*"
 pytest = "*"
 pytest-cov = "*"
 
+[requires]
+python_version = "3.9"
 
 [scripts]
 dev = "bash -c \"set FLASK_ENV='development' && flask run\""
