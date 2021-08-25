@@ -27,8 +27,8 @@ _NB: These instructions assume you have Pipenv installed within your current ver
 
 
 ### Available routes: \
-`GET`, `POST`: `/recipes` \
-`GET`: `/recipes/:id`\
+`GET`, `POST`: `/recipes` 
+`GET`: `/recipes/:id`
 
 
 ### Future features
