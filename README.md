@@ -3,7 +3,11 @@
 
 #### Sweet Bliss App is a backend REST API created with Python and Flask framework.
 
-#### Creators - [Polina Moore](https://github.com/Poligera/), [Monika Segarra](https://github.com/msvalen/) and [Deborah Francis](https://github.com/Deb0890).
+#### Creators - [Polina Moore](https://github.com/Poligera/), [Monica Segarra](https://github.com/msvalen/) and [Deborah Francis](https://github.com/Deb0890).
+
+
+### Deployment: 
+https://flaskappmsvalen.herokuapp.com/
 
 
 ### Functionality:
@@ -38,5 +42,4 @@ _NB: These instructions assume you have Pipenv installed within your current ver
 - Improve "separation of concerns" on the backend using Model
 - Increase test coverage
 - Dockerizing the app
-- Deployment (Heroku or PythonAnywhere)
 
